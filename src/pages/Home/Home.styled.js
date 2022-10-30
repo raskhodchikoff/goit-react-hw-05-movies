@@ -18,6 +18,7 @@ export const ListMovies = styled.ul`
 export const MovieLink = styled(Link)`
   min-width: 100%;
   text-decoration: none;
+  color: black;
 
   &:hover {
     padding: 2px;
