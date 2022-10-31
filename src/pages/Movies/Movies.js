@@ -27,12 +27,11 @@ const Movies = () => {
     e.preventDefault();
     const searchForm = e.currentTarget;
     setSearchParams({ movieName: searchForm.elements.movieName.value });
-    searchForm.reset();
   };
 
   return (
     <Box as="main">
-      <SearchForm handleSubmit={handleSubmit} />
+      <SearchForm handleSubmit={handleSubmit} value={movieName} />
       <List>
         {movies.length > 0 &&
           movies.map(movie => {

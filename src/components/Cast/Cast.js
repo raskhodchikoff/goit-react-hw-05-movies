@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 import { getMovieCast } from 'services/api';
 
@@ -37,15 +37,15 @@ const Cast = () => {
   );
 };
 
-Cast.propTypes = {
-  cast: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      profile_path: PropTypes.string.isRequired,
-      name: PropTypes.string.isRequired,
-      character: PropTypes.string.isRequired,
-    })
-  ),
-};
+// Cast.propTypes = {
+//   cast: PropTypes.arrayOf(
+//     PropTypes.shape({
+//       id: PropTypes.number.isRequired,
+//       profile_path: PropTypes.string.isRequired,
+//       name: PropTypes.string.isRequired,
+//       character: PropTypes.string.isRequired,
+//     })
+//   ),
+// };
 
 export default Cast;

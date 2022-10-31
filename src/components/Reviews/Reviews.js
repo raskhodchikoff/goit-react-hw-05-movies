@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
 import { getMovieReviews } from 'services/api';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 import { List, Item } from './Reviews.styled';
 import { Box } from 'components/Box';
@@ -35,14 +35,14 @@ const Reviews = () => {
   );
 };
 
-Reviews.propTypes = {
-  review: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      author: PropTypes.string.isRequired,
-      content: PropTypes.string.isRequired,
-    })
-  ),
-};
+// Reviews.propTypes = {
+//   review: PropTypes.arrayOf(
+//     PropTypes.shape({
+//       id: PropTypes.number.isRequired,
+//       author: PropTypes.string.isRequired,
+//       content: PropTypes.string.isRequired,
+//     })
+//   ),
+// };
 
 export default Reviews;

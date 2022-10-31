@@ -2,7 +2,7 @@ import { useState, useEffect, Suspense } from 'react';
 import { useParams, useLocation, Outlet } from 'react-router-dom';
 
 import { AiOutlineArrowLeft } from 'react-icons/ai';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 import { getMovieDetails } from 'services/api';
 import Loader from 'components/Loader';
@@ -95,17 +95,17 @@ const MovieDetails = () => {
   );
 };
 
-MovieDetails.propTypes = {
-  movieDetail: PropTypes.arrayOf(
-    PropTypes.shape({
-      original_title: PropTypes.string.isRequired,
-      release_date: PropTypes.number.isRequired,
-      overview: PropTypes.string.isRequired,
-      genres: PropTypes.array.isRequired,
-      poster_path: PropTypes.string.isRequired,
-      vote_average: PropTypes.number.isRequired,
-    })
-  ),
-};
+// MovieDetails.propTypes = {
+//   movieDetail: PropTypes.arrayOf(
+//     PropTypes.shape({
+//       original_title: PropTypes.string.isRequired,
+//       release_date: PropTypes.number.isRequired,
+//       overview: PropTypes.string.isRequired,
+//       genres: PropTypes.array.isRequired,
+//       poster_path: PropTypes.string.isRequired,
+//       vote_average: PropTypes.number.isRequired,
+//     })
+//   ),
+// };
 
 export default MovieDetails;
